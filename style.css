@@ -1,0 +1,101 @@
+body {
+  background: linear-gradient(120deg, #ffd1dc, #ffe6f0);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  overflow-x: hidden;
+  position: relative;
+
+  background-image: url('background.webp'); /* coloque sua imagem na pasta */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hearts::before, .hearts::after {
+  content: "💖 💕 💘 💝 💞 ❤️ 💖 💕 💘 💝 💞 ❤️ 💖 💕 💘 💝 💞 ❤️ 💖 💕 💘 💝 💞 ❤️ 💖 💕 💘 💝 💞 ❤️";
+  font-size: 2rem;
+  position: absolute;
+  animation: floatHearts 20s linear infinite;
+  opacity: 0.6;
+  white-space: nowrap;
+}
+
+.hearts::after {
+  top: 50%;
+  animation-delay: 5s;
+  font-size: 2.5rem;
+  opacity: 0.4;
+}
+
+@keyframes floatHearts {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.carousel {
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.carousel-img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.carousel-buttons {
+  margin-top: 10px;
+}
+
+.carousel-buttons button {
+  background: #ff3366;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  padding: 5px 15px;
+  margin: 0 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#countdown {
+  font-size: 1.5em;
+  margin: 20px 0;
+  color: #b30059;
+}
+
+#mensagemSecreta {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #130fe0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

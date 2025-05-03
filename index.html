@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para Meu Amor 💕</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="text-align: center;">
+  <div class="hearts"></div>
+
+  <div class="container">
+
+    <h1 >💌 Erika & Diogo 💌</h1>
+
+    <br><br>
+    <h1 >💌 Essa é uma mensagem de Diogo para Erika 💌</h1>
+    <p id="typedText"></p>
+
+    <div class="carousel">
+      <img src="01.jpeg" class="carousel-img" id="foto" alt="Foto nossa" />
+ <!--     <img src="imagens/02.jpeg" class="carousel-img" id="foto" alt="Foto nossa" />
+      <img src="imagens/03.jpeg" class="carousel-img" id="foto" alt="Foto nossa" />
+      <img src="imagens/04.jpeg" class="carousel-img" id="foto" alt="Foto nossa" />
+      <img src="imagens/05.jpeg" class="carousel-img" id="foto" alt="Foto nossa" />
+      <img src="imagens/06.jpeg" class="carousel-img" id="foto" alt="Foto nossa" /> 
+  -->
+      <div class="carousel-buttons">
+        <button onclick="trocarFoto(-1)">⟨</button>
+        <button onclick="trocarFoto(1)">⟩</button>
+      </div>
+    </div>
+
+    <h2>💝 Quanto tempo juntos 💍</h2>
+    <div id="countdown"></div>
+
+    <button onclick="mostrarMensagem()">Clique para uma Surpresa 💝</button>
+    <div id="mensagemSecreta" class="hidden">
+      <p id="mensagemDigitada"></p>
+    </div>
+    <br><br>
+  </div>
+
+  
+
+  <audio autoplay loop>
+    <source src="SaveMe.mp3" type="audio/mp3" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
