@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -6,47 +6,37 @@
   <title>Para Meu Amor 💕</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body style="text-align: center;">
+<body>
   <div class="hearts"></div>
 
   <div class="container">
+    <h1>💌 Erika & Diogo 💌</h1>
 
-    <h1 >💌 Erika & Diogo 💌</h1>
-
-    <br><br>
-    <h1 >💌 Essa é uma mensagem de Diogo para Erika 💌</h1>
+    <h2>💌 Essa é uma mensagem de Diogo para Erika 💌</h2>
     <p id="typedText"></p>
 
+    <!-- Carousel -->
     <div class="carousel">
-      <img src="01.jpeg" class="carousel-img" id="foto" alt="Foto nossa" />
- <!--     <img src="imagens/02.jpeg" class="carousel-img" id="foto" alt="Foto nossa" />
-      <img src="imagens/03.jpeg" class="carousel-img" id="foto" alt="Foto nossa" />
-      <img src="imagens/04.jpeg" class="carousel-img" id="foto" alt="Foto nossa" />
-      <img src="imagens/05.jpeg" class="carousel-img" id="foto" alt="Foto nossa" />
-      <img src="imagens/06.jpeg" class="carousel-img" id="foto" alt="Foto nossa" /> 
-
-      <div class="carousel-buttons">
-        <button onclick="trocarFoto(-1)">⟨</button>
-        <button onclick="trocarFoto(1)">⟩</button>
-      </div>
+      <button class="btn prev" onclick="changeSlide(-1)">⟨</button>
+      <img src="01.jpeg" class="carousel-img" id="carouselImage" alt="Foto nossa">
+      <button class="btn next" onclick="changeSlide(1)">⟩</button>
     </div>
 
+    <!-- Countdown -->
     <h2>💝 Quanto tempo juntos 💍</h2>
     <div id="countdown"></div>
 
-    <button onclick="mostrarMensagem()">Clique para uma Surpresa 💝</button>
-    <div id="mensagemSecreta" class="hidden">
-      <p id="mensagemDigitada"></p>
+    <!-- Surprise -->
+    <button onclick="showSecret()">Clique para uma Surpresa 💝</button>
+    <div id="secretMessage" class="hidden">
+      <p id="typedSecret"></p>
     </div>
-    <br><br>
   </div>
 
-  
-
   <audio autoplay loop>
-    <source src="SaveMe.mp3" type="audio/mp3" />
+    <source src="SaveMe.mp3" type="audio/mp3">
   </audio>
 
   <script src="script.js"></script>
 </body>
-</html>-->
+</html>
